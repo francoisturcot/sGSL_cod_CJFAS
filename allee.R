@@ -9,7 +9,7 @@ ssb = SCA_data$ssb
 b = SCA_data$b2to11
 year = SCA_data$year
 
-#calculate productivity
+#calculate production
 p = b #prepare vector
 
 for (t in 1:length(1950:2017)){
