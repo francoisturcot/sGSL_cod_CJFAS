@@ -14,7 +14,7 @@ if (length(to_install) > 0) {
 invisible(lapply(required_packages, library, character.only = TRUE))
 
 #read SCA data
-SCA_data <- readRDS("data/SCA_data.RDS")
+SCA_data <- readRDS("SCA_data.RDS")
 
 catch = SCA_data$catch
 ssb = SCA_data$ssb

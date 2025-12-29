@@ -16,7 +16,7 @@ if (length(to_install) > 0) {
 invisible(lapply(required_packages, library, character.only = TRUE))
 
 #read data 
-data = readRDS("data/SCA_data.RDS")
+data = readRDS("SCA_data.RDS")
 
 #lag recruitment by 2 years
 df = data.frame(stock = data$ssb[1:67]/1000,recruits = data$recruits[3:69]/1000000)
