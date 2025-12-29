@@ -3,11 +3,6 @@
 
 ---
 
-## Abstract
-Many commonly used fisheries reference points assume stable population processes. However, time-varying productivity is increasingly observed among fish stocks. Atlantic cod (*Gadus morhua*) in the southern Gulf of St. Lawrence (sGSL) collapsed in the 1990s and has not recovered, with non-stationarity in recruitment, growth, maturity, and natural mortality preventing equilibrium conditions. In Canada, the biomass limit reference point (LRP) defines the threshold below which a stock is considered to experience serious harm to its productivity and requires rebuilding. This repository provides data and code used to evaluate candidate LRPs for sGSL cod while accounting for non-stationarity in productivity.  
-
----
-
 ## Repository Contents  
 - **`SCA_DATA.RDS`**  
   Annual data including:  
