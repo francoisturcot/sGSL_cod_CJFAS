@@ -1,8 +1,20 @@
-library(tidyverse)
-library(segmented)
+#install and load packages
+required_packages <- c(
+    "tidyverse",
+    "segmented"
+)
+
+installed <- rownames(installed.packages())
+to_install <- setdiff(required_packages, installed)
+
+if (length(to_install) > 0) {
+    install.packages(to_install, dependencies = TRUE)
+}
+
+invisible(lapply(required_packages, library, character.only = TRUE))
 
 #read SCA data
-SCA_data <- readRDS("SCA_data.RDS")
+SCA_data <- readRDS("data/SCA_data.RDS")
 
 catch = SCA_data$catch
 ssb = SCA_data$ssb
