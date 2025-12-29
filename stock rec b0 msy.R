@@ -1,7 +1,19 @@
-library(tidyverse)
-library(FSA)
-library(reshape2)
-library(fishmethods)
+#install and load packages
+required_packages <- c(
+    "tidyverse",
+    "FSA",
+    "reshape2",
+    "fishmethods"
+)
+
+installed <- rownames(installed.packages())
+to_install <- setdiff(required_packages, installed)
+
+if (length(to_install) > 0) {
+    install.packages(to_install, dependencies = TRUE)
+}
+
+invisible(lapply(required_packages, library, character.only = TRUE))
 
 #read data 
 data = readRDS("SCA_data.RDS")
@@ -337,6 +349,7 @@ f0.1
 l_age0.1 <- survivorship_F(f=f0.1,M=m,n_ages=length(ages),sel=s)
 l_age0.1
 phi0.1 <- sum(l_age0.1 *w*mataa) 
+phi0.1
 
 #use equilibrium recruitment
 msyproxy1 = phi0.1*eq_rec
@@ -345,10 +358,10 @@ msyproxy1
 
 # (2) The average biomass (or index of biomass) over a productive period.
 
-catch = SCA_data$catch
-ssb = SCA_data$ssb
-b = SCA_data$b2to11
-year = SCA_data$year
+catch = data$catch
+ssb = data$ssb
+b = data$b2to11
+year = data$year
 
 #calculate production
 p = b #prepare vector

@@ -2,7 +2,7 @@ library(tidyverse)
 library(segmented)
 
 #read SCA data
-SCA_data <- readRDS("C:/Users/TURCOTTEFR/Desktop/cod cjfas paper/cjfas 2e revision/repo/SCA_data.RDS")
+SCA_data <- readRDS("SCA_data.RDS")
 
 catch = SCA_data$catch
 ssb = SCA_data$ssb
