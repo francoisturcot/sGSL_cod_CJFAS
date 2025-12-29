@@ -1,4 +1,4 @@
-# Defining a Biomass Limit Reference Point Under Time-Varying Productivity, A Case Study of Atlantic Cod in the Southern Gulf of St. Lawrence, Canada**  
+# Defining a Biomass Limit Reference Point Under Time-Varying Productivity, A Case Study of Atlantic Cod in the Southern Gulf of St. Lawrence, Canada  
 *François Turcotte, Jenni L. McDermid, Daniel Ricard, Douglas P. Swain*  
 
 ---
